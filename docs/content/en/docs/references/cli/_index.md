@@ -505,7 +505,6 @@ Options:
   -n, --namespace='': Run deployments in the specified namespace
       --no-prune=false: Skip removing images and containers built by Skaffold
       --no-prune-children=false: Skip removing layers reused by Skaffold
-  -o, --output='': Writes '--render-only' output to the specified file
       --port-forward=false: Port-forward exposed container ports within pods
   -p, --profile=[]: Activate profiles by name
       --render-only=false: Print rendered Kubernetes manifests instead of deploying them
@@ -544,7 +543,6 @@ Env vars:
 * `SKAFFOLD_NAMESPACE` (same as `--namespace`)
 * `SKAFFOLD_NO_PRUNE` (same as `--no-prune`)
 * `SKAFFOLD_NO_PRUNE_CHILDREN` (same as `--no-prune-children`)
-* `SKAFFOLD_OUTPUT` (same as `--output`)
 * `SKAFFOLD_PORT_FORWARD` (same as `--port-forward`)
 * `SKAFFOLD_PROFILE` (same as `--profile`)
 * `SKAFFOLD_RENDER_ONLY` (same as `--render-only`)
@@ -715,10 +713,10 @@ Options:
   -n, --namespace='': Run deployments in the specified namespace
       --no-prune=false: Skip removing images and containers built by Skaffold
       --no-prune-children=false: Skip removing layers reused by Skaffold
-  -o, --output='': Writes '--render-only' output to the specified file
       --port-forward=false: Port-forward exposed container ports within pods
   -p, --profile=[]: Activate profiles by name
       --render-only=false: Print rendered Kubernetes manifests instead of deploying them
+      --render-output='': Writes '--render-only' output to the specified file
       --rpc-http-port=50052: tcp port to expose event REST API over HTTP
       --rpc-port=50051: tcp port to expose event API
       --skip-tests=false: Whether to skip the tests after building
@@ -751,10 +749,10 @@ Env vars:
 * `SKAFFOLD_NAMESPACE` (same as `--namespace`)
 * `SKAFFOLD_NO_PRUNE` (same as `--no-prune`)
 * `SKAFFOLD_NO_PRUNE_CHILDREN` (same as `--no-prune-children`)
-* `SKAFFOLD_OUTPUT` (same as `--output`)
 * `SKAFFOLD_PORT_FORWARD` (same as `--port-forward`)
 * `SKAFFOLD_PROFILE` (same as `--profile`)
 * `SKAFFOLD_RENDER_ONLY` (same as `--render-only`)
+* `SKAFFOLD_RENDER_OUTPUT` (same as `--render-output`)
 * `SKAFFOLD_RPC_HTTP_PORT` (same as `--rpc-http-port`)
 * `SKAFFOLD_RPC_PORT` (same as `--rpc-port`)
 * `SKAFFOLD_SKIP_TESTS` (same as `--skip-tests`)
